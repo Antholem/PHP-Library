@@ -1,0 +1,158 @@
+<!--
+Galang, Camille
+Manalo, Sam
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Publisher</title>
+    <link rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="form">
+        <form method="post" action="publisher_create.php">
+            <div class="con">
+                <div class="insideform">
+                    <header class="head-form">
+                        <h2>Publisher Details</h2>
+                        <p>Add Publisher</p>
+                    </header><br/>
+                    <input  class="form-input" type="text" name="pcode" placeholder="Publisher Code"/><br>
+                    <input class="form-input" type="text" name="pname" placeholder="Publisher Name"/><br/>
+                    <input class="form-input" type="text" name="city" placeholder="City"/><br/>
+                    <input class="add-record" type="submit" name="submit" value="Add Record"/><br/>
+                    <input class="reset-record" type="reset" name="Reset">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+<style >
+@import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+body {
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Vibur', cursive;
+    font-family: 'Abel', sans-serif;
+    opacity: .95;
+    }
+
+form {
+    width: 1000px;
+    min-height: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 2%;
+    background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+    }
+
+form .con {
+    display: -webkit-flex;
+    display: flex;
+   -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    }
+
+header {
+    margin: 2% auto 1% auto;
+    text-align: center;
+    }
+
+header h2 {
+    font-size: 250%;
+    font-family: 'Playfair Display', serif;
+    color: #3e403f;
+    }
+
+header p {
+    letter-spacing: 0.05em;
+    }
+
+input[class="form-input"] {
+    width: 500px;
+    height: 50px;
+    margin-top: 2%;
+    padding: 15px;
+    margin-left: 3%;
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: #5E6472;
+    outline: none;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.2s linear; 
+    }
+
+input:focus {
+    transform: translateX(-2px);
+    border-radius: 5px;
+    }
+
+.add-record {
+    display: inline-block;
+    color: #252537;
+    width: 280px;
+    height: 50px;
+    background: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s linear;
+    margin: 5%;
+    margin-left: 25%;
+    letter-spacing: 0.05em;
+    }
+
+.reset-record {
+    width: 48%;
+    display: inline-block;
+    float: left;
+    margin-left: 2%;
+    display: inline-block;
+    color: #252537;
+    background: #B8F2E6;
+    width: 280px;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s linear;
+    margin: -2%;
+    margin-left: 25%;
+    letter-spacing: 0.05em;
+    padding-top: 3%;
+    padding-bottom: 3%; 
+    }
+
+.reset-record:hover {
+    transform: translateY(1px);
+    box-shadow: none;
+    }
+
+.add-record:hover {
+    transform: translateY(1px);
+    box-shadow: none;
+    }
+</style>
